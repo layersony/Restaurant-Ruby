@@ -33,7 +33,7 @@ Build the following methods on the customer class
   + given a string of a first name, returns an array containing all customers with that first name
 + Customer.all_names
   + should return an array of all of the customer full names
-+ Customer#add_review
++ Customer#add_review(restaurant, content)
   + given some content and a restaurant, creates a new review and associates it with that customer and that restaurant
 
 Build out the following methods on the Review class
