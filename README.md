@@ -1,4 +1,4 @@
-# Object Relations Assessment
+# Object Relations Code Challenge
 
 For this assignment, we'll be working with a Yelp-style domain. We have three models - Restaurant, Customer, and Review.
 For our purposes, a Restaurant has many reviews, a Customer has many reviews, and Restaurant - Customer is a many to many relationship.
