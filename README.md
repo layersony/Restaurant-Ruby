@@ -36,7 +36,7 @@ Build the following methods on the `Customer` class
 * Customer.all_names
   * should return an **array** of all of the customer full names
 * Customer#add_review(restaurant, content)
-  * given some review content (as a string) and a **restaurant object**, creates a new review and associates it with that customer and restaurant. A `Review` belongs to a `Customer` and belongs to a `Restaurant`
+  * given a **restaurant object** and some review content (as a string), creates a new review and associates it with that customer and restaurant. A `Review` belongs to a `Customer` and belongs to a `Restaurant`
 
 Build out the following methods on the `Review` class
 
