@@ -34,9 +34,6 @@ We've provided you with a console that you can use to test your code. To enter a
 - `Review.all`
   - returns all of the reviews
   
----
-
-
 ### Associations and Aggregate Methods
 
 #### Customer
@@ -59,8 +56,6 @@ We've provided you with a console that you can use to test your code. To enter a
 - `Restaurant#longest_review`
   - returns the longest review content for a given restaurant
 
----
-
 ### Class Methods and Properties
 
 #### Build the following methods on the `Customer` class
@@ -72,14 +67,10 @@ We've provided you with a console that you can use to test your code. To enter a
 - `Customer.all_names`
   - should return an **array** of all of the customer full names
 
----
-
 #### Build out the following method on the `Restaurant` class
 
 - `Restaurant.find_by_name(name)`
   - given a string of restaurant name, returns the first restaurant that matches
-
----
 
 #### Build out the following methods on the `Review` class
 
@@ -93,6 +84,3 @@ We've provided you with a console that you can use to test your code. To enter a
   - returns the star rating for a restaurant. This should be an integer from 1-5
 - `Review#content`
   - returns the review content, as a string, for a particular review
-
----
-
