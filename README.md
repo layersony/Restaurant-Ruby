@@ -34,65 +34,95 @@ Do your best to follow Ruby best practices. For example, use higher-level array 
 
 Write the following methods in the classes in the files provided. Feel free to build out any helper methods if needed.
 
-### Basic Class Methods and Properties
+Deliverables use the notation `#` for instance methods, and `.` for class methods.
 
-- `Customer.all`
-  - should return **all** of the customer instances
-- `Restaurant.all`
-  - returns an array of all restaurants
-- `Review.all`
-  - returns all of the reviews
+Some of the methods listed are provided to you in the starter code. You should check that they work correctly, and that you understand them.
 
-### Associations and Aggregate Methods
+### Initializers, Readers, and Writers
 
 #### Customer
 
-- `Customer#add_review(restaurant, content, rating)`
-  - given a **restaurant object**, some review content (as a string), and a star rating (as an integer), creates a new review and associates it with that customer and restaurant.
-- `Customer#num_reviews`
-  - Returns the total number of reviews that a customer has authored
-- `Customer#restaurants`
-  - Returns a **unique** array of all restaurants a customer has reviewed
+- `Customer#initialize`
+  - Customer should be initialized with a given name and family name, both strings
+- `Customer#given_name`
+  - returns the customer's given name
+  - should be able to change after the customer is created
+- `Customer#family_name`
+  - returns the customer's family name
+  - should be able to be change after the customer is created
+- `Customer#full_name`
+  - returns the full name of the customer, with the given name and the family name concatenated, Western style.
+- `Customer.all`
+  - returns **all** of the customer instances
 
 #### Restaurant
 
-- `Restaurant#customers`
-  - Returns a **unique** list of all customers who have reviewed a particular restaurant.
+- `Restaurant#initialize`
+  - Restaurants should be initialized with a name, as a string
+- `Restaurant#name`
+  - returns the restaurant's name
+  - should not be able to change after the restaurant is created
+- `Restaurant.all`
+  - returns an array of all restaurants
+
+#### Review
+
+- `Review#initialize`
+  - Reviews should be initialized with a customer, restaurant, rating (a number), and content (a string)
+- `Review#rating`
+  - returns the rating for a restaurant.
+- `Review#content`
+  - returns the review content, a string, for that review
+  - The content should be able to change after the review is created
+- `Review.all`
+  - returns all of the reviews
+
+### Object Relationship Methods
+
+#### Review
+
+- `Review#customer`
+  - returns the customer object for that review
+  - Once a review is created, should not be able to change the customer
+- `Review#restaurant`
+  - returns the restaurant object for that given review
+  - Once a review is created, should not be able to change the restaurant
+
+#### Restaurant
+
 - `Restaurant#reviews`
   - returns an array of all reviews for that restaurant
+- `Restaurant#customers`
+  - Returns a **unique** list of all customers who have reviewed a particular restaurant.
+
+#### Customer
+
+- `Customer#restaurants`
+  - Returns a **unique** array of all restaurants a customer has reviewed
+- `Customer#add_review(restaurant, content, rating)`
+  - given a **restaurant object**, some review content (as a string), and a star rating (as an integer), creates a new review and associates it with that customer and restaurant.
+
+### Aggregate and Association Methods
+
+#### Customer
+
+- `Customer#num_reviews`
+  - Returns the total number of reviews that a customer has authored
+- `Customer.find_by_name(name)`
+  - given a string of a **full name**, returns the **first customer** whose full name matches
+- `Customer.find_all_by_given_name(name)`
+  - given a string of a given name, returns an **array** containing all customers with that given name
+- `Customer.all_names`
+  - should return an **array** of all of the customer full names
+
+#### Restaurant
+
+- `Restaurant.find_by_name(name)`
+  - given a string of restaurant name, returns the first restaurant that matches
 - `Restaurant#average_star_rating`
   - returns the average star rating for a restaurant based on its reviews
 - `Restaurant#longest_review`
   - returns the longest review content for a given restaurant
-
-### Class Methods and Properties
-
-#### Build the following methods on the `Customer` class
-
-- `Customer.find_by_name(name)`
-  - given a string of a **full name**, returns the **first customer** whose full name matches
-- `Customer.find_all_by_first_name(name)`
-  - given a string of a first name, returns an **array** containing all customers with that first name
-- `Customer.all_names`
-  - should return an **array** of all of the customer full names
-
-#### Build out the following method on the `Restaurant` class
-
-- `Restaurant.find_by_name(name)`
-  - given a string of restaurant name, returns the first restaurant that matches
-
-#### Build out the following methods on the `Review` class
-
-- `Review#customer`
-  - returns the customer object for that given review
-  - Once a review is created, I should not be able to change the author
-- `Review#restaurant`
-  - returns the restaurant object for that given review
-  - Once a review is created, I should not be able to change the restaurant
-- `Review#rating`
-  - returns the star rating for a restaurant. This should be an integer from 1-5
-- `Review#content`
-  - returns the review content, as a string, for a particular review
 
 ## Rubric
 
