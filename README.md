@@ -43,7 +43,7 @@ Some of the methods listed are provided to you in the starter code. You should c
 #### Customer
 
 - `Customer#initialize`
-  - Customer should be initialized with a given name and family name, both strings
+  - Customer should be initialized with a given name and family name, both strings (i.e., first and last name, like George Washington)"
 - `Customer#given_name`
   - returns the customer's given name
   - should be able to change after the customer is created
