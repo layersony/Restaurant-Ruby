@@ -49,7 +49,7 @@ Some of the methods listed are provided to you in the starter code. You should c
   - should be able to change after the customer is created
 - `Customer#family_name`
   - returns the customer's family name
-  - should be able to be change after the customer is created
+  - should be able to change after the customer is created
 - `Customer#full_name`
   - returns the full name of the customer, with the given name and the family name concatenated, Western style.
 - `Customer.all`
@@ -62,18 +62,13 @@ Some of the methods listed are provided to you in the starter code. You should c
 - `Restaurant#name`
   - returns the restaurant's name
   - should not be able to change after the restaurant is created
-- `Restaurant.all`
-  - returns an array of all restaurants
 
 #### Review
 
 - `Review#initialize`
-  - Reviews should be initialized with a customer, restaurant, rating (a number), and content (a string)
+  - Reviews should be initialized with a customer, restaurant, rating (a number)
 - `Review#rating`
   - returns the rating for a restaurant.
-- `Review#content`
-  - returns the review content, a string, for that review
-  - The content should be able to change after the review is created
 - `Review.all`
   - returns all of the reviews
 
@@ -99,8 +94,8 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 - `Customer#restaurants`
   - Returns a **unique** array of all restaurants a customer has reviewed
-- `Customer#add_review(restaurant, content, rating)`
-  - given a **restaurant object**, some review content (as a string), and a star rating (as an integer), creates a new review and associates it with that customer and restaurant.
+- `Customer#add_review(restaurant, rating)`
+  - given a **restaurant object** and a star rating (as an integer), creates a new review and associates it with that customer and restaurant.
 
 ### Aggregate and Association Methods
 
@@ -112,17 +107,11 @@ Some of the methods listed are provided to you in the starter code. You should c
   - given a string of a **full name**, returns the **first customer** whose full name matches
 - `Customer.find_all_by_given_name(name)`
   - given a string of a given name, returns an **array** containing all customers with that given name
-- `Customer.all_names`
-  - should return an **array** of all of the customer full names
 
 #### Restaurant
 
-- `Restaurant.find_by_name(name)`
-  - given a string of restaurant name, returns the first restaurant that matches
 - `Restaurant#average_star_rating`
   - returns the average star rating for a restaurant based on its reviews
-- `Restaurant#longest_review`
-  - returns the longest review content for a given restaurant
 
 ## Rubric
 

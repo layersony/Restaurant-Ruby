@@ -1,5 +1,5 @@
 class Customer
-  attr_reader :given_name, :family_name
+  attr_accessor :given_name, :family_name
 
   def initialize(given_name, family_name)
     @given_name = given_name
