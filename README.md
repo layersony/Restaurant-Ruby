@@ -66,7 +66,7 @@ Some of the methods listed are provided to you in the starter code. You should c
 #### Review
 
 - `Review#initialize`
-  - Reviews should be initialized with a customer, restaurant, rating (a number)
+  - Reviews should be initialized with a customer, restaurant, and a rating (a number)
 - `Review#rating`
   - returns the rating for a restaurant.
 - `Review.all`
