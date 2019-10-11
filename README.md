@@ -119,10 +119,10 @@ Some of the methods listed are provided to you in the starter code. You should c
 ### Build classes using OO Ruby Syntax
 
 1. Class code has a syntax or runtime error. Code does not run at all, or exits with an error, or most Object-oriented deliverables are not implemented.
-2. No syntax errors, some deliverables function correctly. Mixes up syntax for class and instance methods, refers to variables in the wrong scope, or uses `self` incorrectly, leading to logical errors.
-3. Correct class syntax for the deliverables submitted. May be incomplete or missing deliverables. Methods might be duplicated, or might not use attr\_\* macros appropriately.
-4. Correct class syntax for all of the submitted code. Uses attr\_\* macros appropriately. Class and instance methods and variables have correct scope, no methods duplicated. Some deliverables might not be complete.
-5. Correct class syntax for all deliverables, all deliverables complete. Shared functionality factored out into helper methods. Appropriate use of attr\_\* macros.
+2. No syntax errors. Some deliverables function correctly. Mixes up syntax for class and instance methods, refers to variables in the wrong scope, or uses `self` incorrectly, leading to logical errors. Method and variable names do not correspond to their respective behavior or data types.
+3. Correct class syntax for the deliverables submitted. May be incomplete or missing deliverables. Most code generally expresses intent: method and variable names match their behaviors and data types.
+4. Correct class syntax for all of the submitted code. Code express intent: method and variable names indicate their behavior and data types. Some deliverables might not be complete.
+5. Correct class syntax for all deliverables, all deliverables complete. Code expresses intent: method and variable names indicate their behavior and data types, with the correct pluralization. Shared functionality factored out into helper methods. Appropriate use of attr\_\* macros.
 
 ### Model relationships using Ruby
 
