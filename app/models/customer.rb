@@ -1,12 +1,12 @@
 class Customer
-  attr_reader :first_name, :last_name
+  attr_accessor :given_name, :family_name
 
-  def initialize(first_name, last_name)
-    @first_name = first_name
-    @last_name  = last_name
+  def initialize(given_name, family_name)
+    @given_name = given_name
+    @family_name  = family_name
   end
 
   def full_name
-    "#{first_name} #{last_name}"
+    "#{given_name} #{family_name}"
   end
 end
