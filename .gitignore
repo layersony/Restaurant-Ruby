@@ -1,3 +1,4 @@
 .DS_Store
 # Ignore Gemfile.lock
 Gemfile.lock
+vendor
